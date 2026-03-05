@@ -36,7 +36,6 @@ public class MyLinkedList {
         System.out.println("null");
     }
 
-
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
         list.add(10);
