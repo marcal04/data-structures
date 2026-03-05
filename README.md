@@ -1,1 +1,1 @@
-Hoje eu aprendi o que é java.util.ArrayList por baixo dos "panos", assim que ele funciona.
+Aqui é onde fica meus esutudos diarios. estamos em construção...kk
