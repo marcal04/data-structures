@@ -23,6 +23,30 @@ public class MyLinkedList {
         size++;
     }
 
+    public void remove(int index) {
+        if (index == 0) {
+            head = head.next;
+        } else {
+            Node current = head;
+            for (int i = 0; i < index - 1; i++) {
+                current = current.next;
+            }
+            current.next = current.next.next;
+        }
+        size--;
+    }
+
+    public int get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Índice inválido: " + index);
+        }
+        Node current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current.value;
+    }
+
     public int size() {
         return size;
     }
@@ -41,8 +65,12 @@ public class MyLinkedList {
         list.add(10);
         list.add(20);
         list.add(30);
+        //list.remove(1);
         list.print();
         System.out.println(list.size());
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+        System.out.println(list.get(2));
     }
 
 
