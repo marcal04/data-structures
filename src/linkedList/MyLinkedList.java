@@ -1,9 +1,9 @@
 package linkedList;
 
 public class MyLinkedList {
-    private Node head;
-    private int size;
-    private Node tail;
+    public Node head;
+    public int size;
+    public Node tail;
 
     public MyLinkedList() {
         this.head = null;
